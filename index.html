@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>clickhouse</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="header__up">
+            <div class="container">
+                <div class="header__up--content">
+                    <div class="header__logo"><img src="./img/header/logo.png" alt="clickhouse"></div>
+                    <nav class="header__navigation">
+                        <ul class="header__nav">
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Условия</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__telephone">
+                        <div class="header__tel">
+                            <a class="header__tel--1" href="tel:+3757364636472">+ 375 736 463 64 72</a>
+                            <div class="header__slash">/</div>
+                            <a class="header__tel--2" href="tel:+3757364636472">+ 375 736 463 64 72</a>
+                        </div>
+                        <div class="header__request--call"><a href="#">Заказать звонок</a></div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <section class="header__down">
+            <div class="container">
+                <div class="header__container">
+                    <button class="header__button" onclick="openNav()">
+                        <div class="header__bar1"></div>
+                        <div class="header__bar2"></div>
+                        <div class="header__bar3"></div>
+                    </button>
+                    <div class="header__menu">
+                        <div class="header__menu--up">
+                            <img src="./img/header/logo.png" alt="logo">
+                            <button class="header__menu--button" onclick="closeNav()">
+                                <div class="header__menu--btn1"></div>
+                                <div class="header__menu--btn2"></div>
+                            </button>
+                        </div>
+                        <div class="header__menu--down">
+                            <ul class="header__menu--main">
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">Товары в наличии</a></li>
+                                <li><a href="#">Скидки</a></li>
+                                <li><a href="#">Популярное</a></li>
+                                <li><a href="#">Вдохновение</a></li>
+                            </ul>
+                            <ul class="header__menu--secondary">
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Условия</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>                        
+                        </div>                        
+                    </div>
+                    <div class="header__search">
+                        <input type="search" placeholder="Что желаете найти?">
+                        <a href="#">
+                            <img src="./img/header/search.svg" alt="search">
+                        </a>
+                    </div>
+                    <a class="header__list" href="#">Вставить список покупок</a>
+                    <a class="header__star" href="#"><img src="./img/header/star.png" alt="star"></a>
+                    <div class="header__shopping--cart">
+                        <div class="header__amount">1</div>
+                        <a class="header__cart" href="#"><img src="./img/header/cart.png" alt="cart"></a>
+                    </div>
+                    <a class="header__human" href="#"><img src="./img/header/human.png" alt="human"></a>
+                </div>
+            </div>
+        </section>
+        <section class="home container">
+            <div class="home__block">
+                <h1>Мебель на <br> любой вкус!</h1>
+                <ul class="home__list">
+                    <li><span>Худи, чашки для горячего чая и термосы</span></li>
+                    <li><span>Eлочные игрушки, брелочки</span></li>
+                    <li><span>Начало списка вещей, которые можно</span></li>
+                </ul>
+                <div class="home__btn">
+                    <a href="#">Перейти в каталог</a>
+                </div>
+                <a class="home__link" href="#">Внести список артикулов</a>
+            </div>
+            <div class="home__slideshow">
+                <div class="home__slides">
+                    <img src="./img/header/home_decore.png" alt="">
+                </div>
+                <div class="home__slides">
+                    <img src="./img/header/home_decore.png" alt="">
+                </div>
+                <div class="home__slides">
+                    <img src="./img/header/home_decore.png" alt="">
+                </div>
+                <div class="home__slides">
+                    <img src="./img/header/home_decore.png" alt="">
+                </div>
+                <a class="home__arrow--left" href="#" onclick="">
+                    <img src="./img/header/arrow.png" alt="">
+                </a>
+                <div class="home__arrow">
+                    <a class="home__arrow--right" href="#" onclick="">
+                        <img src="./img/header/arrow.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="home__dot">
+                <div class="dot" onclick=""></div>
+                <div class="dot" onclick=""></div>
+                <div class="dot" onclick=""></div>
+                <div class="dot" onclick=""></div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
