@@ -10,8 +10,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <section class="header__up">
-            <div class="container">
+        <section class="header__up container">
                 <div class="header__up--content">
                     <div class="header__logo"><img src="./img/header/logo.png" alt="clickhouse"></div>
                     <nav class="header__navigation">
@@ -31,10 +30,8 @@
                         <div class="header__request--call"><a href="#">Заказать звонок</a></div>
                     </div> 
                 </div>
-            </div>
         </section>
-        <section class="header__down">
-            <div class="container">
+        <section class="header__down container">
                 <div class="header__container">
                     <button class="header__button" onclick="openNav()">
                         <div class="header__bar1"></div>
@@ -79,7 +76,6 @@
                     </div>
                     <a class="header__human" href="#"><img src="./img/header/human.png" alt="human"></a>
                 </div>
-            </div>
         </section>
         <section class="home container">
             <div class="home__block">
@@ -99,34 +95,124 @@
                     <img src="./img/header/home_decore.png" alt="">
                 </div>
                 <div class="home__slides">
-                    <img src="./img/header/home_decore.png" alt="">
+                    <img src="./img/header/home_decor_3.png" alt="">
                 </div>
                 <div class="home__slides">
-                    <img src="./img/header/home_decore.png" alt="">
+                    <img src="./img/header/home_decore_1.png" alt="">
                 </div>
                 <div class="home__slides">
-                    <img src="./img/header/home_decore.png" alt="">
+                    <img src="./img/header/home_decore_2.png" alt="">
                 </div>
-                <a class="home__arrow--left" href="#" onclick="">
-                    <img src="./img/header/arrow.png" alt="">
-                </a>
-                <div class="home__arrow">
-                    <a class="home__arrow--right" href="#" onclick="">
+                <div class="home__arrow--l">
+                    <a class="home__arrow--left" href="#" onclick="plusSlides(-1)">
+                        <img src="./img/header/arrow.png" alt="">
+                    </a>
+                </div>
+                
+                <div class="home__arrow--r">
+                    <a class="home__arrow--right" href="#" onclick="plusSlides(1)">
                         <img src="./img/header/arrow.png" alt="">
                     </a>
                 </div>
             </div>
             <br>
             <div class="home__dot">
-                <div class="dot" onclick=""></div>
-                <div class="dot" onclick=""></div>
-                <div class="dot" onclick=""></div>
-                <div class="dot" onclick=""></div>
-
+                <div class="dot" onclick="currentSlide(1)"></div>
+                <div class="dot" onclick="currentSlide(2)"></div>
+                <div class="dot" onclick="currentSlide(3)"></div>
+                <div class="dot" onclick="currentSlide(4)"></div>
             </div>
-
         </section>
-
+        <section class="popular container">
+            <div class="popular__title">
+                <h2>Популярные категории</h2>
+                <a href="#">Все категории<img src="./img/popular/arrow_3.png" alt="arrow"></a>
+            </div>
+            <div class="popular__row--1">
+                <div class="popular__card--1 properties">
+                    <a href="#"><img src="./img/popular/klipartz_1.png" alt="klipartz_1"></a>
+                    <a href="#">Диваны</a>
+                </div>
+                <div class="popular__card--2 properties">
+                    <a href="#"><img src="./img/popular/kisspng-himalayas.png" alt="kisspng-himalayas"></a>
+                    <a href="#">Спальная</a>
+                </div>
+                <div class="popular__card--3 properties">
+                    <a href="#"><img src="./img/popular/kisspng-frying-pan.png" alt="frying"></a>
+                    <a href="#">Кухня</a>
+                </div>
+                <div class="popular__card--4 properties">
+                    <a href="#"><img src="./img/popular/kisspng-garden-hoses.png" alt="garden"></a>
+                    <a href="#">Для сада</a>
+                </div>
+                <div class="popular__card--5 properties">
+                    <a href="#"><img src="./img/popular/5a1ccbd51c0c21.png" alt="chairs"></a>
+                    <a href="#">Мебель</a>
+                </div>
+            </div>
+            <div class="popular__row--2">
+                <div class="popular__card--6 properties">
+                    <a href="#"><img src="./img/popular/kisspng-antibacterial-soap.png" alt="Гигиена"></a>
+                    <a href="#">Гигиена</a>
+                </div>
+                <div class="popular__card--7 properties">
+                    <a href="#"><img src="./img/popular/5a1c81acca3c83.png" alt="Товары для отдыха"></a>
+                    <a href="#">Товары для отдыха</a>
+                </div>
+                <div class="popular__card--8 properties">
+                    <a href="#"><img src="./img/popular/5a35220cc154b5.png" alt="Зеркала"></a>
+                    <a href="#">Зеркала</a>
+                </div>
+                <div class="popular__card--9 properties">
+                    <a href="#"><img src="./img/popular/kisspng-bedside-tables-pedestal-desk-buffets-sideboards.png" alt="Хранение и порядок"></a>
+                    <a href="#">Хранение и порядок</a>
+                </div>
+                <div class="popular__card--10 properties">
+                    <a href="#"><img src="./img/popular/kisspng-cooking-ranges-oven-electric.png" alt="Кухня и бытовая тех.."></a>
+                    <a href="#">Кухня и бытовая техника</a>
+                </div>
+            </div>
+        </section>
+        <section class="discounts container">
+            <div class="discounts__title">
+                <h2>Скидки <span>%</span></h2>
+                <a href="#">Все товары в категории<img src="./img/popular/arrow_3.png" alt=""></a>
+            </div>
+            <div class="discounts__cards">
+                <div class="discounts__card">
+                    <img src="./img/discounts/image_6.png" alt="">
+                    <div>12%</div>
+                    <p>VINTER 2020 ВИНТЕР 2020</p>
+                    <p>Шкаф платяной 3-дверный 117x190 см</p>
+                    <div>763,23 Br</div>
+                    <div>62 392,23 Br</div>
+                </div>
+                <div class="discounts__card">
+                    <img src="./img/discounts/image_7.png" alt="">
+                    <div>12%</div>
+                    <p>VINTER 2020 ВИНТЕР 2020</p>
+                    <p>Шкаф платяной 3-дверный 117x190 см</p>
+                    <div>7 763,23 Br</div>
+                    <div>2 792,37 Br</div>
+                </div>
+                <div class="discounts__card">
+                    <img src="./img/discounts/image_8.png" alt="">
+                    <div>12%</div>
+                    <p>VINTER 2020 ВИНТЕР 2020</p>
+                    <p>Шкаф платяной 3-дверный 117x190 см</p>
+                    <div>763,23 Br</div>
+                    <div>392,3 Br</div>
+                </div>
+                <div class="discounts__card">
+                    <img src="./img/discounts/image_9.png" alt="">
+                    <div>12%</div>
+                    <p>VINTER 2020 ВИНТЕР 2020</p>
+                    <p>Шкаф платяной 3-дверный 117x190 см</p>
+                    <div>63,23 Br</div>
+                    <div>55,53 Br</div>
+                </div>
+            </div>
+        </section>
     </div>
 
 

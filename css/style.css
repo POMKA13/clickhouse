@@ -69,6 +69,10 @@ body {
   padding-right: 15px;
 }
 
+.header__down {
+  display: flex;
+  justify-content: space-between;
+}
 .header__container {
   display: flex;
   align-items: center;
@@ -178,7 +182,7 @@ body {
   padding: 13.86px 21.74px 16.89px 0px;
 }
 .header__list {
-  margin-right: 66px;
+  margin-right: 78px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -230,6 +234,7 @@ body {
 .home__btn {
   width: 350px;
   margin-left: 60px;
+  margin-right: 45px;
   margin-bottom: 31px;
   padding: 8px 82px 11px 81px;
   background-color: #FF9900;
@@ -266,10 +271,21 @@ body {
   left: 25.15px;
   transform: rotate(180deg);
 }
-.home__arrow {
+.home__arrow--l {
   width: 71px;
 }
-.home__arrow:hover {
+.home__arrow--l:hover {
+  height: 487px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 60px 0px 0px 60px;
+}
+.home__arrow--r {
+  width: 71px;
+}
+.home__arrow--r:hover {
   height: 487px;
   position: absolute;
   top: 0px;
@@ -286,7 +302,7 @@ body {
   display: flex;
   position: absolute;
   bottom: 60px;
-  left: 745px;
+  left: 743px;
   -moz-column-gap: 15px;
        column-gap: 15px;
 }
@@ -294,4 +310,111 @@ body {
   width: 40px;
   height: 3px;
   background-color: #fff;
+  opacity: 0.9;
+}
+.home .active {
+  background-color: #FF9900;
+}
+
+.popular__title {
+  display: flex;
+}
+.popular__title h2 {
+  padding-top: 60px;
+  padding-right: 15px;
+  padding-bottom: 42px;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 34px;
+}
+.popular__title a {
+  padding-top: 66px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  color: #000;
+}
+.popular__title a img {
+  padding-top: 14px;
+  padding-left: 5px;
+}
+.popular .popular__row--1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+.popular .popular__card--1 img {
+  padding: 19px 16px 0px 16px;
+}
+.popular .popular__card--2 img {
+  padding: 21px 67px 10px 66px;
+}
+.popular .popular__card--3 img {
+  padding: 25px 19px 14px 18px;
+}
+.popular .popular__card--4 img {
+  padding: 24px 42px 14px 42px;
+}
+.popular .popular__card--5 img {
+  padding: 16.24px 79px 5.76px 80px;
+}
+.popular .popular__row--2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 67px;
+}
+.popular .popular__card--6 img {
+  padding: 14px 84px 0px 85px;
+}
+.popular .popular__card--7 img {
+  padding: 13px 72px 12px 70px;
+}
+.popular .popular__card--8 img {
+  padding: 13px 69px 7px 70px;
+}
+.popular .popular__card--9 img {
+  position: relative;
+  top: 28px;
+}
+.popular .popular__card--9 a {
+  position: relative;
+  top: -55px;
+}
+.popular .popular__card--10 {
+  padding: 7px 43px 1px 42px;
+}
+.popular .properties {
+  display: flex;
+  flex-direction: column;
+  width: 237px;
+  height: 179px;
+}
+.popular .properties a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #000;
+}
+
+.discounts__title {
+  display: flex;
+}
+.discounts__title h2 {
+  padding-bottom: 67px;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 34px;
+}
+.discounts__title h2 span {
+  font-weight: 400;
+  color: #FF3232;
+}
+.discounts__cards {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
