@@ -182,7 +182,7 @@ body {
   padding: 13.86px 21.74px 16.89px 0px;
 }
 .header__list {
-  margin-right: 78px;
+  margin-right: 76px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -411,8 +411,21 @@ body {
   line-height: 34px;
 }
 .discounts__title h2 span {
+  padding-right: 25px;
   font-weight: 400;
   color: #FF3232;
+}
+.discounts__title a {
+  padding-top: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  color: #000;
+}
+.discounts__title a img {
+  padding-left: 3px;
+  padding-top: 13px;
 }
 .discounts__cards {
   display: flex;

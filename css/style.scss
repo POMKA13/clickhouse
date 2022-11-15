@@ -277,7 +277,7 @@ body {
       // .header__list
 
       &__list {
-        margin-right: 78px;
+        margin-right: 76px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 18px;
@@ -615,9 +615,22 @@ body {
         line-height: 34px;
         }
                 &__title h2 span {
+                    padding-right: 25px;
                     font-weight: 400;
                     color: #FF3232;
                 }
+                                &__title a {
+                                    padding-top: 8px;
+                                    font-family: 'Roboto', sans-serif;
+                                    font-weight: 400;
+                                    font-size: 18px;
+                                    line-height: 34px;
+                                    color: #000;
+                                }
+                                                                &__title a img {
+                                                                    padding-left: 3px;
+                                                                    padding-top: 13px;
+                                                                }
 
     // .discounts__cards
 
