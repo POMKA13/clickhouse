@@ -601,7 +601,7 @@ body {
 }
 
 .discounts {
-
+    padding-bottom: 86px;
     // .discounts__title
 
     &__title {
@@ -642,6 +642,56 @@ body {
     // .discounts__card
 
     &__card {}
+        &__card img {
+
+        }
+    &__stock {
+        padding-left: 27px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 34px;
+        color: #FF3232;
+    }
+
+    &__title {
+        padding-left: 27px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 36px;
+
+    }
+
+    &__description {
+        padding-left: 27px;
+        padding-right: 27px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    &__old--price {
+        padding-left: 27px;
+        text-decoration: line-through;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+        color: #7D7D7D;
+    }
+
+    &__new--price {
+        padding-left: 27px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 32px;
+
+    }
+
+    
 }
 
 
