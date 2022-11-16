@@ -43,3 +43,24 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = 'block'
     dots[slideIndex-1].className += ' active'
 }
+
+
+//COUNTER
+
+function counter(count) {
+    let minus = count.querySelector('.products__minus')
+    let number = count.querySelector(".products__number");
+    let plus = count.querySelector(".products__plus");
+
+    plus.addEventListener('click', function () {
+        number.innerText++
+    })
+
+    minus.addEventListener('click', function () {
+        number.innerText > 0 && number.innerText--
+    })
+ 
+}
+
+let counts = document.querySelectorAll(".products__counter");
+counts.forEach(counter)
