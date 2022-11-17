@@ -51,7 +51,9 @@ body {
         &__nav a {
             color: #000;
         }
-
+        &__nav li a:hover {
+            color: #FF9900;
+        }
     // .header__telephone
 
     &__telephone {
@@ -98,6 +100,10 @@ body {
             line-height: 26.6px;
             color: #7D7D7D;
         }
+        &__request--call a:hover {
+            color: #000;
+       
+    }
 
 
 }
@@ -120,6 +126,7 @@ body {
     &__container {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
     // .header__button
 
@@ -129,6 +136,9 @@ body {
         padding-right: 84px;
         background-color: #fff;
     }
+                &__button:hover div {
+                    background-color: #000;
+                }
 
     // .header__bar1
 
@@ -189,6 +199,9 @@ body {
         height: 19.82px;
         background-color: #fff;
     }
+                &__menu--button:hover div{
+                    background-color: #000;
+                }
 
     // .header__menu--btn1
 
@@ -232,6 +245,9 @@ body {
                     line-height: 32px;
                     color: #000;
                 }
+                &__menu--main li a:hover {
+                    color: #FF9900;
+                }
 
     // .header__menu--secondary
 
@@ -259,11 +275,24 @@ body {
       // .header__search
 
       &__search {
-        margin-right: 85px;
+        margin-right: 83px;
         border-radius: 30px;
+        background: linear-gradient(98.34deg, #FFFFFF 0%, #FFFFFF 100%);
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
       }
+           &__search:hover {
+            border: 1px solid #bfbfbf;
+            background: linear-gradient(98.34deg, #FFFFFF 0%, #FFFFFF 100%);
+            box-shadow: inset 0px 0px 5px rgba(255, 153, 0, 0.3);
+
+           }
+                   &__search:active {
+                        background: linear-gradient(98.34deg, #FFFFFF 0%, #FFFFFF 100%);
+                        box-shadow: inset 0px 0px 5px rgba(255, 153, 0, 0.3);
+        
+                   }
       &__search input {
-        padding: 16px 312px 17px 28px;
+        padding: 16px 303px 17px 28px;
         border-radius: 30px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -273,7 +302,11 @@ body {
         &__search a img {
             padding: 13.86px 21.74px 16.89px 0px;
         }
-
+        &__cont {
+            display: flex;
+            position: relative;
+            right: -20px;
+        }
       // .header__list
 
       &__list {
@@ -314,11 +347,15 @@ body {
 
       // .header__cart
 
-      &__cart {}
+      &__cart img:hover {
+        content: url('/img/header/cart_orange.png');
+      }
 
       // .header__human
 
-      &__human {}
+      &__human img:hover {
+        content: url('/img/header/human_orange.png');
+      }
 
     
     
@@ -631,6 +668,15 @@ body {
                                                                     padding-left: 3px;
                                                                     padding-top: 13px;
                                                                 }
+                                                                &__title:hover a {
+                                                                    color: #FF9900;
+                                                                    
+                                                                }
+                                                                &__title:hover img {
+                                                                    content: url('/img/popular/arrow_3_orange.png');
+                                                                    
+                                                                }
+
 
     // .discounts__cards
 
@@ -721,7 +767,12 @@ body {
                             margin-left: 8px;
                             margin-top: 13px;
                         }
-
+        &__title:hover a {
+            color: #FF9900;
+        }
+                                &__title:hover img {
+                                    content: url('/img/popular/arrow_3_orange.png');
+                                }
     // .products__cards
 
     &__cards {
@@ -816,7 +867,7 @@ body {
     }
 
     &__number {
-        height: 18px;
+        width: 20px;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 18px;
