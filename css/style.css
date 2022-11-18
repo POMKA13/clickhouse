@@ -30,6 +30,9 @@ body {
 .header__nav a {
   color: #000;
 }
+.header__nav a:hover {
+  color: #FF9900;
+}
 .header__telephone {
   padding: 28px 0px 0px 0px;
 }
@@ -151,6 +154,9 @@ body {
   font-size: 36px;
   line-height: 32px;
   color: #000;
+}
+.header__menu--main li a:hover {
+  color: #FF9900;
 }
 .header__menu--secondary {
   padding-left: 120px;
