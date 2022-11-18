@@ -238,12 +238,6 @@ body {
   line-height: 14.06px;
   color: #FF9900;
 }
-.header__cart img:hover {
-  content: url("/img/header/cart_orange.png");
-}
-.header__human img:hover {
-  content: url("/img/header/human_orange.png");
-}
 
 .home {
   display: flex;
